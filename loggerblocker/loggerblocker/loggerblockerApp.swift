@@ -10,7 +10,7 @@ class VPNManager: ObservableObject {
             self?.manager = managers?.first ?? NETunnelProviderManager()
             
             let proto = NETunnelProviderProtocol()
-            proto.providerBundleIdentifier = "com.loggerblocker.loggerblocker.firewall"
+            proto.providerBundleIdentifier = "com.loggerblocker.loggerblocker.ne"
             proto.serverAddress = "127.0.0.1"
             
             self?.manager?.protocolConfiguration = proto

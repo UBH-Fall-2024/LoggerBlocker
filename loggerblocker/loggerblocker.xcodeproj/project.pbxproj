@@ -7,21 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		706A71042CDFDA8E00331EB6 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 706A71032CDFDA8E00331EB6 /* NetworkExtension.framework */; };
-		706A710C2CDFDA8E00331EB6 /* firewall.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 706A71012CDFDA8E00331EB6 /* firewall.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		706A71142CDFF7E900331EB6 /* NIO in Frameworks */ = {isa = PBXBuildFile; productRef = 706A71132CDFF7E900331EB6 /* NIO */; };
-		706A71162CDFF7E900331EB6 /* NIOConcurrencyHelpers in Frameworks */ = {isa = PBXBuildFile; productRef = 706A71152CDFF7E900331EB6 /* NIOConcurrencyHelpers */; };
-		706A71182CDFF7E900331EB6 /* NIOCore in Frameworks */ = {isa = PBXBuildFile; productRef = 706A71172CDFF7E900331EB6 /* NIOCore */; };
-		706A711A2CDFF7E900331EB6 /* NIOEmbedded in Frameworks */ = {isa = PBXBuildFile; productRef = 706A71192CDFF7E900331EB6 /* NIOEmbedded */; };
-		706A711C2CDFF7E900331EB6 /* NIOFoundationCompat in Frameworks */ = {isa = PBXBuildFile; productRef = 706A711B2CDFF7E900331EB6 /* NIOFoundationCompat */; };
-		706A711E2CDFF7E900331EB6 /* NIOHTTP1 in Frameworks */ = {isa = PBXBuildFile; productRef = 706A711D2CDFF7E900331EB6 /* NIOHTTP1 */; };
-		706A71202CDFF7E900331EB6 /* NIOPosix in Frameworks */ = {isa = PBXBuildFile; productRef = 706A711F2CDFF7E900331EB6 /* NIOPosix */; };
-		706A71222CDFF7E900331EB6 /* NIOTLS in Frameworks */ = {isa = PBXBuildFile; productRef = 706A71212CDFF7E900331EB6 /* NIOTLS */; };
-		706A71242CDFF7E900331EB6 /* NIOTestUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 706A71232CDFF7E900331EB6 /* NIOTestUtils */; };
-		706A71262CDFF7E900331EB6 /* NIOWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 706A71252CDFF7E900331EB6 /* NIOWebSocket */; };
-		706A71282CDFF7E900331EB6 /* _NIOConcurrency in Frameworks */ = {isa = PBXBuildFile; productRef = 706A71272CDFF7E900331EB6 /* _NIOConcurrency */; };
-		706A712A2CDFF7E900331EB6 /* _NIOFileSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 706A71292CDFF7E900331EB6 /* _NIOFileSystem */; };
-		706A712C2CDFF7E900331EB6 /* _NIOFileSystemFoundationCompat in Frameworks */ = {isa = PBXBuildFile; productRef = 706A712B2CDFF7E900331EB6 /* _NIOFileSystemFoundationCompat */; };
+		70CF053F2CE022DB000E1834 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 706A71032CDFDA8E00331EB6 /* NetworkExtension.framework */; };
+		70CF05472CE022DB000E1834 /* ne.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 70CF053E2CE022DB000E1834 /* ne.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,12 +26,12 @@
 			remoteGlobalIDString = 706A70CF2CDFD9E200331EB6;
 			remoteInfo = loggerblocker;
 		};
-		706A710A2CDFDA8E00331EB6 /* PBXContainerItemProxy */ = {
+		70CF05452CE022DB000E1834 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 706A70C82CDFD9E200331EB6 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 706A71002CDFDA8E00331EB6;
-			remoteInfo = firewall;
+			remoteGlobalIDString = 70CF053D2CE022DB000E1834;
+			remoteInfo = ne;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -55,7 +42,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				706A710C2CDFDA8E00331EB6 /* firewall.appex in Embed Foundation Extensions */,
+				70CF05472CE022DB000E1834 /* ne.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,17 +53,17 @@
 		706A70D02CDFD9E200331EB6 /* loggerblocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = loggerblocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		706A70E02CDFD9E300331EB6 /* loggerblockerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = loggerblockerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		706A70EA2CDFD9E400331EB6 /* loggerblockerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = loggerblockerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		706A71012CDFDA8E00331EB6 /* firewall.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = firewall.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		706A71032CDFDA8E00331EB6 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		70CF053E2CE022DB000E1834 /* ne.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ne.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		706A710D2CDFDA8E00331EB6 /* Exceptions for "firewall" folder in "firewall" target */ = {
+		70CF05482CE022DB000E1834 /* Exceptions for "ne" folder in "ne" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 706A71002CDFDA8E00331EB6 /* firewall */;
+			target = 70CF053D2CE022DB000E1834 /* ne */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -96,12 +83,12 @@
 			path = loggerblockerUITests;
 			sourceTree = "<group>";
 		};
-		706A71052CDFDA8E00331EB6 /* firewall */ = {
+		70CF05402CE022DB000E1834 /* ne */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				706A710D2CDFDA8E00331EB6 /* Exceptions for "firewall" folder in "firewall" target */,
+				70CF05482CE022DB000E1834 /* Exceptions for "ne" folder in "ne" target */,
 			);
-			path = firewall;
+			path = ne;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -128,24 +115,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		706A70FE2CDFDA8E00331EB6 /* Frameworks */ = {
+		70CF053B2CE022DB000E1834 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				706A71162CDFF7E900331EB6 /* NIOConcurrencyHelpers in Frameworks */,
-				706A71202CDFF7E900331EB6 /* NIOPosix in Frameworks */,
-				706A71042CDFDA8E00331EB6 /* NetworkExtension.framework in Frameworks */,
-				706A71282CDFF7E900331EB6 /* _NIOConcurrency in Frameworks */,
-				706A71182CDFF7E900331EB6 /* NIOCore in Frameworks */,
-				706A711E2CDFF7E900331EB6 /* NIOHTTP1 in Frameworks */,
-				706A71242CDFF7E900331EB6 /* NIOTestUtils in Frameworks */,
-				706A71222CDFF7E900331EB6 /* NIOTLS in Frameworks */,
-				706A712A2CDFF7E900331EB6 /* _NIOFileSystem in Frameworks */,
-				706A71142CDFF7E900331EB6 /* NIO in Frameworks */,
-				706A711C2CDFF7E900331EB6 /* NIOFoundationCompat in Frameworks */,
-				706A712C2CDFF7E900331EB6 /* _NIOFileSystemFoundationCompat in Frameworks */,
-				706A71262CDFF7E900331EB6 /* NIOWebSocket in Frameworks */,
-				706A711A2CDFF7E900331EB6 /* NIOEmbedded in Frameworks */,
+				70CF053F2CE022DB000E1834 /* NetworkExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,7 +132,7 @@
 				706A70D22CDFD9E200331EB6 /* loggerblocker */,
 				706A70E32CDFD9E300331EB6 /* loggerblockerTests */,
 				706A70ED2CDFD9E400331EB6 /* loggerblockerUITests */,
-				706A71052CDFDA8E00331EB6 /* firewall */,
+				70CF05402CE022DB000E1834 /* ne */,
 				706A71022CDFDA8E00331EB6 /* Frameworks */,
 				706A70D12CDFD9E200331EB6 /* Products */,
 			);
@@ -170,7 +144,7 @@
 				706A70D02CDFD9E200331EB6 /* loggerblocker.app */,
 				706A70E02CDFD9E300331EB6 /* loggerblockerTests.xctest */,
 				706A70EA2CDFD9E400331EB6 /* loggerblockerUITests.xctest */,
-				706A71012CDFDA8E00331EB6 /* firewall.appex */,
+				70CF053E2CE022DB000E1834 /* ne.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -198,7 +172,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				706A710B2CDFDA8E00331EB6 /* PBXTargetDependency */,
+				70CF05462CE022DB000E1834 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				706A70D22CDFD9E200331EB6 /* loggerblocker */,
@@ -256,39 +230,26 @@
 			productReference = 706A70EA2CDFD9E400331EB6 /* loggerblockerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		706A71002CDFDA8E00331EB6 /* firewall */ = {
+		70CF053D2CE022DB000E1834 /* ne */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 706A710E2CDFDA8E00331EB6 /* Build configuration list for PBXNativeTarget "firewall" */;
+			buildConfigurationList = 70CF05492CE022DB000E1834 /* Build configuration list for PBXNativeTarget "ne" */;
 			buildPhases = (
-				706A70FD2CDFDA8E00331EB6 /* Sources */,
-				706A70FE2CDFDA8E00331EB6 /* Frameworks */,
-				706A70FF2CDFDA8E00331EB6 /* Resources */,
+				70CF053A2CE022DB000E1834 /* Sources */,
+				70CF053B2CE022DB000E1834 /* Frameworks */,
+				70CF053C2CE022DB000E1834 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				706A71052CDFDA8E00331EB6 /* firewall */,
+				70CF05402CE022DB000E1834 /* ne */,
 			);
-			name = firewall;
+			name = ne;
 			packageProductDependencies = (
-				706A71132CDFF7E900331EB6 /* NIO */,
-				706A71152CDFF7E900331EB6 /* NIOConcurrencyHelpers */,
-				706A71172CDFF7E900331EB6 /* NIOCore */,
-				706A71192CDFF7E900331EB6 /* NIOEmbedded */,
-				706A711B2CDFF7E900331EB6 /* NIOFoundationCompat */,
-				706A711D2CDFF7E900331EB6 /* NIOHTTP1 */,
-				706A711F2CDFF7E900331EB6 /* NIOPosix */,
-				706A71212CDFF7E900331EB6 /* NIOTLS */,
-				706A71232CDFF7E900331EB6 /* NIOTestUtils */,
-				706A71252CDFF7E900331EB6 /* NIOWebSocket */,
-				706A71272CDFF7E900331EB6 /* _NIOConcurrency */,
-				706A71292CDFF7E900331EB6 /* _NIOFileSystem */,
-				706A712B2CDFF7E900331EB6 /* _NIOFileSystemFoundationCompat */,
 			);
-			productName = firewall;
-			productReference = 706A71012CDFDA8E00331EB6 /* firewall.appex */;
+			productName = ne;
+			productReference = 70CF053E2CE022DB000E1834 /* ne.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -312,7 +273,7 @@
 						CreatedOnToolsVersion = 16.1;
 						TestTargetID = 706A70CF2CDFD9E200331EB6;
 					};
-					706A71002CDFDA8E00331EB6 = {
+					70CF053D2CE022DB000E1834 = {
 						CreatedOnToolsVersion = 16.1;
 					};
 				};
@@ -337,7 +298,7 @@
 				706A70CF2CDFD9E200331EB6 /* loggerblocker */,
 				706A70DF2CDFD9E300331EB6 /* loggerblockerTests */,
 				706A70E92CDFD9E400331EB6 /* loggerblockerUITests */,
-				706A71002CDFDA8E00331EB6 /* firewall */,
+				70CF053D2CE022DB000E1834 /* ne */,
 			);
 		};
 /* End PBXProject section */
@@ -364,7 +325,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		706A70FF2CDFDA8E00331EB6 /* Resources */ = {
+		70CF053C2CE022DB000E1834 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -395,7 +356,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		706A70FD2CDFDA8E00331EB6 /* Sources */ = {
+		70CF053A2CE022DB000E1834 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -415,10 +376,10 @@
 			target = 706A70CF2CDFD9E200331EB6 /* loggerblocker */;
 			targetProxy = 706A70EB2CDFD9E400331EB6 /* PBXContainerItemProxy */;
 		};
-		706A710B2CDFDA8E00331EB6 /* PBXTargetDependency */ = {
+		70CF05462CE022DB000E1834 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 706A71002CDFDA8E00331EB6 /* firewall */;
-			targetProxy = 706A710A2CDFDA8E00331EB6 /* PBXContainerItemProxy */;
+			target = 70CF053D2CE022DB000E1834 /* ne */;
+			targetProxy = 70CF05452CE022DB000E1834 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -612,6 +573,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5XHHN8QL62;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				MARKETING_VERSION = 1.0;
@@ -630,6 +592,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5XHHN8QL62;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				MARKETING_VERSION = 1.0;
@@ -647,6 +610,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5XHHN8QL62;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.loggerblocker.loggerblockerUITests;
@@ -663,6 +627,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5XHHN8QL62;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.loggerblocker.loggerblockerUITests;
@@ -674,17 +639,17 @@
 			};
 			name = Release;
 		};
-		706A710F2CDFDA8E00331EB6 /* Debug */ = {
+		70CF054A2CE022DB000E1834 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = firewall/firewall.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ne/ne.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5XHHN8QL62;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = firewall/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = firewall;
+				INFOPLIST_FILE = ne/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ne;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -692,9 +657,8 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.loggerblocker.firewall;
+				PRODUCT_BUNDLE_IDENTIFIER = com.loggerblocker.loggerblocker.ne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -702,17 +666,17 @@
 			};
 			name = Debug;
 		};
-		706A71102CDFDA8E00331EB6 /* Release */ = {
+		70CF054B2CE022DB000E1834 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = firewall/firewall.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ne/ne.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5XHHN8QL62;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = firewall/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = firewall;
+				INFOPLIST_FILE = ne/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ne;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -720,9 +684,8 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.loggerblocker.firewall;
+				PRODUCT_BUNDLE_IDENTIFIER = com.loggerblocker.loggerblocker.ne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -769,11 +732,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		706A710E2CDFDA8E00331EB6 /* Build configuration list for PBXNativeTarget "firewall" */ = {
+		70CF05492CE022DB000E1834 /* Build configuration list for PBXNativeTarget "ne" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				706A710F2CDFDA8E00331EB6 /* Debug */,
-				706A71102CDFDA8E00331EB6 /* Release */,
+				70CF054A2CE022DB000E1834 /* Debug */,
+				70CF054B2CE022DB000E1834 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -790,74 +753,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		706A71132CDFF7E900331EB6 /* NIO */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 706A71122CDFF7E900331EB6 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIO;
-		};
-		706A71152CDFF7E900331EB6 /* NIOConcurrencyHelpers */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 706A71122CDFF7E900331EB6 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIOConcurrencyHelpers;
-		};
-		706A71172CDFF7E900331EB6 /* NIOCore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 706A71122CDFF7E900331EB6 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIOCore;
-		};
-		706A71192CDFF7E900331EB6 /* NIOEmbedded */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 706A71122CDFF7E900331EB6 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIOEmbedded;
-		};
-		706A711B2CDFF7E900331EB6 /* NIOFoundationCompat */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 706A71122CDFF7E900331EB6 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIOFoundationCompat;
-		};
-		706A711D2CDFF7E900331EB6 /* NIOHTTP1 */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 706A71122CDFF7E900331EB6 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIOHTTP1;
-		};
-		706A711F2CDFF7E900331EB6 /* NIOPosix */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 706A71122CDFF7E900331EB6 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIOPosix;
-		};
-		706A71212CDFF7E900331EB6 /* NIOTLS */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 706A71122CDFF7E900331EB6 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIOTLS;
-		};
-		706A71232CDFF7E900331EB6 /* NIOTestUtils */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 706A71122CDFF7E900331EB6 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIOTestUtils;
-		};
-		706A71252CDFF7E900331EB6 /* NIOWebSocket */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 706A71122CDFF7E900331EB6 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = NIOWebSocket;
-		};
-		706A71272CDFF7E900331EB6 /* _NIOConcurrency */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 706A71122CDFF7E900331EB6 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = _NIOConcurrency;
-		};
-		706A71292CDFF7E900331EB6 /* _NIOFileSystem */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 706A71122CDFF7E900331EB6 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = _NIOFileSystem;
-		};
-		706A712B2CDFF7E900331EB6 /* _NIOFileSystemFoundationCompat */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 706A71122CDFF7E900331EB6 /* XCRemoteSwiftPackageReference "swift-nio" */;
-			productName = _NIOFileSystemFoundationCompat;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 706A70C82CDFD9E200331EB6 /* Project object */;
 }
