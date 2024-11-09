@@ -1,0 +1,863 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		706A71042CDFDA8E00331EB6 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 706A71032CDFDA8E00331EB6 /* NetworkExtension.framework */; };
+		706A710C2CDFDA8E00331EB6 /* firewall.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 706A71012CDFDA8E00331EB6 /* firewall.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		706A71142CDFF7E900331EB6 /* NIO in Frameworks */ = {isa = PBXBuildFile; productRef = 706A71132CDFF7E900331EB6 /* NIO */; };
+		706A71162CDFF7E900331EB6 /* NIOConcurrencyHelpers in Frameworks */ = {isa = PBXBuildFile; productRef = 706A71152CDFF7E900331EB6 /* NIOConcurrencyHelpers */; };
+		706A71182CDFF7E900331EB6 /* NIOCore in Frameworks */ = {isa = PBXBuildFile; productRef = 706A71172CDFF7E900331EB6 /* NIOCore */; };
+		706A711A2CDFF7E900331EB6 /* NIOEmbedded in Frameworks */ = {isa = PBXBuildFile; productRef = 706A71192CDFF7E900331EB6 /* NIOEmbedded */; };
+		706A711C2CDFF7E900331EB6 /* NIOFoundationCompat in Frameworks */ = {isa = PBXBuildFile; productRef = 706A711B2CDFF7E900331EB6 /* NIOFoundationCompat */; };
+		706A711E2CDFF7E900331EB6 /* NIOHTTP1 in Frameworks */ = {isa = PBXBuildFile; productRef = 706A711D2CDFF7E900331EB6 /* NIOHTTP1 */; };
+		706A71202CDFF7E900331EB6 /* NIOPosix in Frameworks */ = {isa = PBXBuildFile; productRef = 706A711F2CDFF7E900331EB6 /* NIOPosix */; };
+		706A71222CDFF7E900331EB6 /* NIOTLS in Frameworks */ = {isa = PBXBuildFile; productRef = 706A71212CDFF7E900331EB6 /* NIOTLS */; };
+		706A71242CDFF7E900331EB6 /* NIOTestUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 706A71232CDFF7E900331EB6 /* NIOTestUtils */; };
+		706A71262CDFF7E900331EB6 /* NIOWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 706A71252CDFF7E900331EB6 /* NIOWebSocket */; };
+		706A71282CDFF7E900331EB6 /* _NIOConcurrency in Frameworks */ = {isa = PBXBuildFile; productRef = 706A71272CDFF7E900331EB6 /* _NIOConcurrency */; };
+		706A712A2CDFF7E900331EB6 /* _NIOFileSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 706A71292CDFF7E900331EB6 /* _NIOFileSystem */; };
+		706A712C2CDFF7E900331EB6 /* _NIOFileSystemFoundationCompat in Frameworks */ = {isa = PBXBuildFile; productRef = 706A712B2CDFF7E900331EB6 /* _NIOFileSystemFoundationCompat */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		706A70E12CDFD9E300331EB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 706A70C82CDFD9E200331EB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 706A70CF2CDFD9E200331EB6;
+			remoteInfo = loggerblocker;
+		};
+		706A70EB2CDFD9E400331EB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 706A70C82CDFD9E200331EB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 706A70CF2CDFD9E200331EB6;
+			remoteInfo = loggerblocker;
+		};
+		706A710A2CDFDA8E00331EB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 706A70C82CDFD9E200331EB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 706A71002CDFDA8E00331EB6;
+			remoteInfo = firewall;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		706A71112CDFDA8E00331EB6 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				706A710C2CDFDA8E00331EB6 /* firewall.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		706A70D02CDFD9E200331EB6 /* loggerblocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = loggerblocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		706A70E02CDFD9E300331EB6 /* loggerblockerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = loggerblockerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		706A70EA2CDFD9E400331EB6 /* loggerblockerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = loggerblockerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		706A71012CDFDA8E00331EB6 /* firewall.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = firewall.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		706A71032CDFDA8E00331EB6 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		706A710D2CDFDA8E00331EB6 /* Exceptions for "firewall" folder in "firewall" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 706A71002CDFDA8E00331EB6 /* firewall */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		706A70D22CDFD9E200331EB6 /* loggerblocker */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = loggerblocker;
+			sourceTree = "<group>";
+		};
+		706A70E32CDFD9E300331EB6 /* loggerblockerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = loggerblockerTests;
+			sourceTree = "<group>";
+		};
+		706A70ED2CDFD9E400331EB6 /* loggerblockerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = loggerblockerUITests;
+			sourceTree = "<group>";
+		};
+		706A71052CDFDA8E00331EB6 /* firewall */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				706A710D2CDFDA8E00331EB6 /* Exceptions for "firewall" folder in "firewall" target */,
+			);
+			path = firewall;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		706A70CD2CDFD9E200331EB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		706A70DD2CDFD9E300331EB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		706A70E72CDFD9E400331EB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		706A70FE2CDFDA8E00331EB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				706A71162CDFF7E900331EB6 /* NIOConcurrencyHelpers in Frameworks */,
+				706A71202CDFF7E900331EB6 /* NIOPosix in Frameworks */,
+				706A71042CDFDA8E00331EB6 /* NetworkExtension.framework in Frameworks */,
+				706A71282CDFF7E900331EB6 /* _NIOConcurrency in Frameworks */,
+				706A71182CDFF7E900331EB6 /* NIOCore in Frameworks */,
+				706A711E2CDFF7E900331EB6 /* NIOHTTP1 in Frameworks */,
+				706A71242CDFF7E900331EB6 /* NIOTestUtils in Frameworks */,
+				706A71222CDFF7E900331EB6 /* NIOTLS in Frameworks */,
+				706A712A2CDFF7E900331EB6 /* _NIOFileSystem in Frameworks */,
+				706A71142CDFF7E900331EB6 /* NIO in Frameworks */,
+				706A711C2CDFF7E900331EB6 /* NIOFoundationCompat in Frameworks */,
+				706A712C2CDFF7E900331EB6 /* _NIOFileSystemFoundationCompat in Frameworks */,
+				706A71262CDFF7E900331EB6 /* NIOWebSocket in Frameworks */,
+				706A711A2CDFF7E900331EB6 /* NIOEmbedded in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		706A70C72CDFD9E200331EB6 = {
+			isa = PBXGroup;
+			children = (
+				706A70D22CDFD9E200331EB6 /* loggerblocker */,
+				706A70E32CDFD9E300331EB6 /* loggerblockerTests */,
+				706A70ED2CDFD9E400331EB6 /* loggerblockerUITests */,
+				706A71052CDFDA8E00331EB6 /* firewall */,
+				706A71022CDFDA8E00331EB6 /* Frameworks */,
+				706A70D12CDFD9E200331EB6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		706A70D12CDFD9E200331EB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				706A70D02CDFD9E200331EB6 /* loggerblocker.app */,
+				706A70E02CDFD9E300331EB6 /* loggerblockerTests.xctest */,
+				706A70EA2CDFD9E400331EB6 /* loggerblockerUITests.xctest */,
+				706A71012CDFDA8E00331EB6 /* firewall.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		706A71022CDFDA8E00331EB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				706A71032CDFDA8E00331EB6 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		706A70CF2CDFD9E200331EB6 /* loggerblocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 706A70F42CDFD9E400331EB6 /* Build configuration list for PBXNativeTarget "loggerblocker" */;
+			buildPhases = (
+				706A70CC2CDFD9E200331EB6 /* Sources */,
+				706A70CD2CDFD9E200331EB6 /* Frameworks */,
+				706A70CE2CDFD9E200331EB6 /* Resources */,
+				706A71112CDFDA8E00331EB6 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				706A710B2CDFDA8E00331EB6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				706A70D22CDFD9E200331EB6 /* loggerblocker */,
+			);
+			name = loggerblocker;
+			packageProductDependencies = (
+			);
+			productName = loggerblocker;
+			productReference = 706A70D02CDFD9E200331EB6 /* loggerblocker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		706A70DF2CDFD9E300331EB6 /* loggerblockerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 706A70F72CDFD9E400331EB6 /* Build configuration list for PBXNativeTarget "loggerblockerTests" */;
+			buildPhases = (
+				706A70DC2CDFD9E300331EB6 /* Sources */,
+				706A70DD2CDFD9E300331EB6 /* Frameworks */,
+				706A70DE2CDFD9E300331EB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				706A70E22CDFD9E300331EB6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				706A70E32CDFD9E300331EB6 /* loggerblockerTests */,
+			);
+			name = loggerblockerTests;
+			packageProductDependencies = (
+			);
+			productName = loggerblockerTests;
+			productReference = 706A70E02CDFD9E300331EB6 /* loggerblockerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		706A70E92CDFD9E400331EB6 /* loggerblockerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 706A70FA2CDFD9E400331EB6 /* Build configuration list for PBXNativeTarget "loggerblockerUITests" */;
+			buildPhases = (
+				706A70E62CDFD9E400331EB6 /* Sources */,
+				706A70E72CDFD9E400331EB6 /* Frameworks */,
+				706A70E82CDFD9E400331EB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				706A70EC2CDFD9E400331EB6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				706A70ED2CDFD9E400331EB6 /* loggerblockerUITests */,
+			);
+			name = loggerblockerUITests;
+			packageProductDependencies = (
+			);
+			productName = loggerblockerUITests;
+			productReference = 706A70EA2CDFD9E400331EB6 /* loggerblockerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		706A71002CDFDA8E00331EB6 /* firewall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 706A710E2CDFDA8E00331EB6 /* Build configuration list for PBXNativeTarget "firewall" */;
+			buildPhases = (
+				706A70FD2CDFDA8E00331EB6 /* Sources */,
+				706A70FE2CDFDA8E00331EB6 /* Frameworks */,
+				706A70FF2CDFDA8E00331EB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				706A71052CDFDA8E00331EB6 /* firewall */,
+			);
+			name = firewall;
+			packageProductDependencies = (
+				706A71132CDFF7E900331EB6 /* NIO */,
+				706A71152CDFF7E900331EB6 /* NIOConcurrencyHelpers */,
+				706A71172CDFF7E900331EB6 /* NIOCore */,
+				706A71192CDFF7E900331EB6 /* NIOEmbedded */,
+				706A711B2CDFF7E900331EB6 /* NIOFoundationCompat */,
+				706A711D2CDFF7E900331EB6 /* NIOHTTP1 */,
+				706A711F2CDFF7E900331EB6 /* NIOPosix */,
+				706A71212CDFF7E900331EB6 /* NIOTLS */,
+				706A71232CDFF7E900331EB6 /* NIOTestUtils */,
+				706A71252CDFF7E900331EB6 /* NIOWebSocket */,
+				706A71272CDFF7E900331EB6 /* _NIOConcurrency */,
+				706A71292CDFF7E900331EB6 /* _NIOFileSystem */,
+				706A712B2CDFF7E900331EB6 /* _NIOFileSystemFoundationCompat */,
+			);
+			productName = firewall;
+			productReference = 706A71012CDFDA8E00331EB6 /* firewall.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		706A70C82CDFD9E200331EB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					706A70CF2CDFD9E200331EB6 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					706A70DF2CDFD9E300331EB6 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 706A70CF2CDFD9E200331EB6;
+					};
+					706A70E92CDFD9E400331EB6 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 706A70CF2CDFD9E200331EB6;
+					};
+					706A71002CDFDA8E00331EB6 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+				};
+			};
+			buildConfigurationList = 706A70CB2CDFD9E200331EB6 /* Build configuration list for PBXProject "loggerblocker" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 706A70C72CDFD9E200331EB6;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				706A71122CDFF7E900331EB6 /* XCRemoteSwiftPackageReference "swift-nio" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 706A70D12CDFD9E200331EB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				706A70CF2CDFD9E200331EB6 /* loggerblocker */,
+				706A70DF2CDFD9E300331EB6 /* loggerblockerTests */,
+				706A70E92CDFD9E400331EB6 /* loggerblockerUITests */,
+				706A71002CDFDA8E00331EB6 /* firewall */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		706A70CE2CDFD9E200331EB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		706A70DE2CDFD9E300331EB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		706A70E82CDFD9E400331EB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		706A70FF2CDFDA8E00331EB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		706A70CC2CDFD9E200331EB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		706A70DC2CDFD9E300331EB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		706A70E62CDFD9E400331EB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		706A70FD2CDFDA8E00331EB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		706A70E22CDFD9E300331EB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 706A70CF2CDFD9E200331EB6 /* loggerblocker */;
+			targetProxy = 706A70E12CDFD9E300331EB6 /* PBXContainerItemProxy */;
+		};
+		706A70EC2CDFD9E400331EB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 706A70CF2CDFD9E200331EB6 /* loggerblocker */;
+			targetProxy = 706A70EB2CDFD9E400331EB6 /* PBXContainerItemProxy */;
+		};
+		706A710B2CDFDA8E00331EB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 706A71002CDFDA8E00331EB6 /* firewall */;
+			targetProxy = 706A710A2CDFDA8E00331EB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		706A70F22CDFD9E400331EB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		706A70F32CDFD9E400331EB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		706A70F52CDFD9E400331EB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = loggerblocker/loggerblocker.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"loggerblocker/Preview Content\"";
+				DEVELOPMENT_TEAM = 5XHHN8QL62;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.loggerblocker.loggerblocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		706A70F62CDFD9E400331EB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = loggerblocker/loggerblocker.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"loggerblocker/Preview Content\"";
+				DEVELOPMENT_TEAM = 5XHHN8QL62;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.loggerblocker.loggerblocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		706A70F82CDFD9E400331EB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.loggerblocker.loggerblockerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/loggerblocker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/loggerblocker";
+			};
+			name = Debug;
+		};
+		706A70F92CDFD9E400331EB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.loggerblocker.loggerblockerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/loggerblocker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/loggerblocker";
+			};
+			name = Release;
+		};
+		706A70FB2CDFD9E400331EB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.loggerblocker.loggerblockerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = loggerblocker;
+			};
+			name = Debug;
+		};
+		706A70FC2CDFD9E400331EB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.loggerblocker.loggerblockerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = loggerblocker;
+			};
+			name = Release;
+		};
+		706A710F2CDFDA8E00331EB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = firewall/firewall.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5XHHN8QL62;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = firewall/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = firewall;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.loggerblocker.firewall;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		706A71102CDFDA8E00331EB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = firewall/firewall.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5XHHN8QL62;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = firewall/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = firewall;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.loggerblocker.firewall;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		706A70CB2CDFD9E200331EB6 /* Build configuration list for PBXProject "loggerblocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				706A70F22CDFD9E400331EB6 /* Debug */,
+				706A70F32CDFD9E400331EB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		706A70F42CDFD9E400331EB6 /* Build configuration list for PBXNativeTarget "loggerblocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				706A70F52CDFD9E400331EB6 /* Debug */,
+				706A70F62CDFD9E400331EB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		706A70F72CDFD9E400331EB6 /* Build configuration list for PBXNativeTarget "loggerblockerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				706A70F82CDFD9E400331EB6 /* Debug */,
+				706A70F92CDFD9E400331EB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		706A70FA2CDFD9E400331EB6 /* Build configuration list for PBXNativeTarget "loggerblockerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				706A70FB2CDFD9E400331EB6 /* Debug */,
+				706A70FC2CDFD9E400331EB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		706A710E2CDFDA8E00331EB6 /* Build configuration list for PBXNativeTarget "firewall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				706A710F2CDFDA8E00331EB6 /* Debug */,
+				706A71102CDFDA8E00331EB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		706A71122CDFF7E900331EB6 /* XCRemoteSwiftPackageReference "swift-nio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-nio.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.76.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		706A71132CDFF7E900331EB6 /* NIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 706A71122CDFF7E900331EB6 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIO;
+		};
+		706A71152CDFF7E900331EB6 /* NIOConcurrencyHelpers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 706A71122CDFF7E900331EB6 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOConcurrencyHelpers;
+		};
+		706A71172CDFF7E900331EB6 /* NIOCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 706A71122CDFF7E900331EB6 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOCore;
+		};
+		706A71192CDFF7E900331EB6 /* NIOEmbedded */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 706A71122CDFF7E900331EB6 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOEmbedded;
+		};
+		706A711B2CDFF7E900331EB6 /* NIOFoundationCompat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 706A71122CDFF7E900331EB6 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOFoundationCompat;
+		};
+		706A711D2CDFF7E900331EB6 /* NIOHTTP1 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 706A71122CDFF7E900331EB6 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOHTTP1;
+		};
+		706A711F2CDFF7E900331EB6 /* NIOPosix */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 706A71122CDFF7E900331EB6 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOPosix;
+		};
+		706A71212CDFF7E900331EB6 /* NIOTLS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 706A71122CDFF7E900331EB6 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOTLS;
+		};
+		706A71232CDFF7E900331EB6 /* NIOTestUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 706A71122CDFF7E900331EB6 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOTestUtils;
+		};
+		706A71252CDFF7E900331EB6 /* NIOWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 706A71122CDFF7E900331EB6 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOWebSocket;
+		};
+		706A71272CDFF7E900331EB6 /* _NIOConcurrency */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 706A71122CDFF7E900331EB6 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = _NIOConcurrency;
+		};
+		706A71292CDFF7E900331EB6 /* _NIOFileSystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 706A71122CDFF7E900331EB6 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = _NIOFileSystem;
+		};
+		706A712B2CDFF7E900331EB6 /* _NIOFileSystemFoundationCompat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 706A71122CDFF7E900331EB6 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = _NIOFileSystemFoundationCompat;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 706A70C82CDFD9E200331EB6 /* Project object */;
+}
