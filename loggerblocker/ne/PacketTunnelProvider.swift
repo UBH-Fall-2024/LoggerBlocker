@@ -5,21 +5,25 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
     private let logger = Logger(subsystem: "com.loggerblocker.loggerblocker", category: "PacketTunnelProvider")
     
     override func startTunnel(options: [String : NSObject]?, completionHandler: @escaping (Error?) -> Void) {
-        // Configure with broader network settings
+        // Configure tunnel settings with both IPv4 and IPv6
         let settings = NEPacketTunnelNetworkSettings(tunnelRemoteAddress: "10.0.0.1")
         
-        // Configure IPv4 with broader route coverage
+        // IPv4 Configuration
         let ipv4Settings = NEIPv4Settings(addresses: ["10.0.0.2"], subnetMasks: ["255.255.255.0"])
         ipv4Settings.includedRoutes = [NEIPv4Route.default()]
-        ipv4Settings.excludedRoutes = [] // Allow all routes
         settings.ipv4Settings = ipv4Settings
         
-        // DNS settings
+        // IPv6 Configuration
+        let ipv6Settings = NEIPv6Settings(addresses: ["fd00::1"], networkPrefixLengths: [64])
+        ipv6Settings.includedRoutes = [NEIPv6Route.default()]
+        settings.ipv6Settings = ipv6Settings
+        
+        // DNS Configuration
         settings.dnsSettings = NEDNSSettings(servers: ["8.8.8.8", "8.8.4.4"])
         settings.dnsSettings?.matchDomains = [""] // Match all domains
         
-        // MTU settings to ensure proper packet sizes
-        settings.mtu = NSNumber(value: 1400)
+        // Optimize MTU
+        settings.mtu = NSNumber(value: 1500)
         
         setTunnelNetworkSettings(settings) { [weak self] error in
             if let error = error {
@@ -28,7 +32,6 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
                 return
             }
             
-            // Start capturing packets
             self?.startPacketCapture()
             completionHandler(nil)
         }
@@ -41,16 +44,23 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
             // Log packet information
             self.logger.debug("Received \(packets.count) packets")
             
-            // Process and forward packets
-            self.packetFlow.writePackets(packets, withProtocols: protocols)
+            // Process packets before forwarding
+            for (index, packet) in packets.enumerated() {
+                // Add your packet inspection logic here
+                self.logger.debug("Processing packet \(index) with protocol \(protocols[index])")
+            }
             
-            // Continue reading packets
-            self.startPacketCapture()
+            // Forward packets with minimal delay
+            DispatchQueue.global(qos: .userInteractive).async {
+                self.packetFlow.writePackets(packets, withProtocols: protocols)
+                // Continue reading packets
+                self.startPacketCapture()
+            }
         }
     }
     
     override func stopTunnel(with reason: NEProviderStopReason, completionHandler: @escaping () -> Void) {
-        logger.info("Stopping tunnel with reason: ")
+        logger.info("Stopping tunnel with reason: \(reason)")
         completionHandler()
     }
 }
